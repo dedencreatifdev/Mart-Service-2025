@@ -2,17 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Database\Eloquent\Concerns\HasUuids;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class Produk extends Model
+class Produk extends Pivot
 {
-    /** @use HasFactory<\Database\Factories\CustomerFactory> */
-    use HasFactory, Notifiable, HasUuids, SoftDeletes;
-    protected $guarded = [];
-
-    protected $table = 'sma_products';
+    //
 }
