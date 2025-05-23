@@ -142,6 +142,8 @@ class CustomerResource extends Resource
                 Tables\Columns\TextColumn::make('type_nama')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('customer_group_id')
+                    ->label('Grup Kode')
+                    ->searchable()
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('customer_group_nama')
