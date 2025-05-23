@@ -39,6 +39,7 @@ class UserResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
+            ->heading('Users')
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
@@ -60,7 +61,7 @@ class UserResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                Tables\Actions\EditAction::make()->label('')->tooltip('Edit'),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

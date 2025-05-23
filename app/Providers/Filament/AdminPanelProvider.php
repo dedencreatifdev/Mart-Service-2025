@@ -27,6 +27,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('')
             ->login()
+            ->registration()
             ->colors([
                 'primary' => "#096B68",
             ])
@@ -55,8 +56,9 @@ class AdminPanelProvider extends PanelProvider
                 Authenticate::class,
             ])
             ->font('Nunito')
-            // ->maxContentWidth('full')
-
+            ->maxContentWidth('full')
+            ->sidebarCollapsibleOnDesktop()
+            ->sidebarWidth('15rem')
             ->navigationGroups([
                 NavigationGroup::make()
                     ->label('Service'),

@@ -41,7 +41,9 @@
             {{
                 $attributes->class([
                     $getLogoClasses($isDarkMode),
-                    'text-xl font-bold leading-5 tracking-tight text-gray-950 dark:text-white',
+                    'text-md  font-bold leading-5 tracking-tight text-gray-950 dark:text-white',
+                    'text-white' => filament()->auth()->check(),
+
                 ])
             }}
         >

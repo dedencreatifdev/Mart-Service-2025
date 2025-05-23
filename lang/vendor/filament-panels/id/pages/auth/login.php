@@ -10,7 +10,7 @@ return [
 
         'register' => [
             'before' => 'atau',
-            'label' => 'buat akun baru',
+            'label' => 'Daftar',
         ],
 
         'request_password_reset' => [

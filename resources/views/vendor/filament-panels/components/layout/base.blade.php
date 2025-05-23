@@ -70,6 +70,13 @@
                 --collapsed-sidebar-width: {{ filament()->getCollapsedSidebarWidth() }};
                 --default-theme-mode: {{ filament()->getDefaultThemeMode()->value }};
             }
+
+            body {
+                font-size: 0.97rem;
+            }
+            a span .fi-btn-label {
+                font-size: 0.97rem;
+            }
         </style>
 
         @stack('styles')
